@@ -1,0 +1,22 @@
+.insButton{
+    margin-left: 90px ;
+    margin-right:90px;
+    justify-content: center; 
+    width: 20%;
+    padding: 0px;
+}
+#upload{
+    margin-left: 87%;
+    margin-top: 1px;
+}
+.instrOp{
+    padding: 23px 12px 390px 12px;
+    margin: 23px 12px;
+    background-color: #B9E9FC;
+    /* box-shadow: 10px 13px green; */
+}
+label{
+    margin-left: 30px;
+}
+
+
