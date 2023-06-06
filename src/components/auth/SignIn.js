@@ -28,13 +28,17 @@ const signUp = (e) => {
         createUserWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             console.log(userCredential);
+            navigate('/home');
           })
           .catch((error) => {
             console.log(error);
           });
       };
 
-
+const logout = (e) => {
+        e.preventDefault();
+        auth.signOut();
+      };
 return (
 <section>
       <div class="form-box">

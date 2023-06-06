@@ -66,3 +66,9 @@
   .link{
     text-decoration: none;
   }
+  .logoutButton{
+    margin-left: 90%;
+    margin-top: 55px;
+    border-radius: 8px;
+    padding: 10px 20px;
+   }

@@ -1,0 +1,25 @@
+{
+    "sections":[
+        {
+            "sec": "A",
+            "monday": ["TCS301", "PCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301"],
+            "tuesday": ["TCS301", "PCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301"],
+            "wednesday": ["TCS301", "PCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301"],
+            "thursday": ["TCS301", "PCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301"],
+            "friday": ["TCS301", "PCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301"],
+            "saturday": ["TCS301", "PCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301", "TCS301"],
+            "Class_Coordinator": "Neha Tripathi"
+        },
+        {
+            "sec":"B",
+            "monday":["BCS301","PCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301"],
+            "tuesday":["TCS301","PCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301"],
+            "wednesday":["TCS301","PCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301"],
+            "thursday":["TCS301","PCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301"],
+            "friday":["TCS301","PCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301"],
+            "saturday":["TCS301","PCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301","TCS301"],
+            "Class_Coordinator":"Manish Sharma"
+        }
+    ]
+}
+
