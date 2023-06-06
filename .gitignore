@@ -1,0 +1,5 @@
+venv
+build
+dist
+generator_algo.egg-info
+logs/app_logs.log
