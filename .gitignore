@@ -3,3 +3,6 @@ build
 dist
 generator_algo.egg-info
 logs/app_logs.log
+.DS_Store
+classes/input.json
+classes/output.json
