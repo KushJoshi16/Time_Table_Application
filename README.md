@@ -4,6 +4,6 @@
 
 ## To run the flask aplication:
 
-- pip install -r requirements.txt
+- `pip install -r requirements.txt`
 
 - `python app.py`
