@@ -9,7 +9,9 @@ logging.basicConfig(filename="logs/app_logs.log",
  
 logger = logging.getLogger()
  
-app = Flask(__name__)
+application = Flask(__name__)
+
+app = application
 
 @app.route('/set_inputData',methods=['POST'])
 def set_inputData():
