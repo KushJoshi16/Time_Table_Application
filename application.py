@@ -13,6 +13,11 @@ application = Flask(__name__)
 
 app = application
 
+
+@app.route('/')
+def Hello_page():
+  return 'Hello, The Website is fine!'
+
 @app.route('/set_inputData',methods=['POST'])
 def set_inputData():
     input_data  = request.get_json()
