@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/home/Homee';
 import Instructor from './components/instructors/Instructor';
 import Room from './components/rooms/Room';
-import { Navigate } from 'react-router-dom';
 import Protected from './components/Protected';
 
 
@@ -19,20 +18,32 @@ function App() {
         setAuthUser(null);
       }
     });
+
 console.log(authUser)
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
+
         <Route path="/" element={
         <SignIn/>
         }/>
         <Route path="/home" element={
-        <Protected>
+        <Protected authUser={authUser}>
         <Home/>
         </Protected>}/>
-        <Route path="/instructors" element={<Instructor/>}/> 
-        <Route path="/rooms" element={<Room/>}/> 
+
+        <Route path="/instructors" element={
+        <Protected authUser={authUser}>
+        <Instructor/>
+        </Protected>}/> 
+
+        <Route path="/rooms" element={
+        <Protected authUser={authUser}>
+        <Room/>
+        </Protected>}/> 
+
         </Routes>
       </BrowserRouter>
     </div>
