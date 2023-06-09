@@ -8,14 +8,14 @@ def timeTableFromOutput():
     with open('classes/output.json') as f:
         data = json.load(f)
 
-    sectionTimeTableTemplate = {
-        "monday":[""]*class_hours,
-        "tuesday":[""]*class_hours,
-        "wednesday":[""]*class_hours,
-        "thursday":[""]*class_hours,
-        "friday":[""]*class_hours,
-        "saturday":[""]*class_hours
-    }
+    # sectionTimeTableTemplate = {
+    #     "monday":[""]*class_hours,
+    #     "tuesday":[""]*class_hours,
+    #     "wednesday":[""]*class_hours,
+    #     "thursday":[""]*class_hours,
+    #     "friday":[""]*class_hours,
+    #     "saturday":[""]*class_hours
+    # }
     day = [
         "monday",
         "tuesday",

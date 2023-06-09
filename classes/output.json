@@ -9,8 +9,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U8",
-        "Assigned_time": 28
+        "Assigned_class": "U1",
+        "Assigned_time": 55
     },
     {
         "Subject": "Interakcija covek racunar",
@@ -22,7 +22,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "CR",
-        "Assigned_time": 12
+        "Assigned_time": 32
     },
     {
         "Subject": "Masinsko ucenje",
@@ -35,7 +35,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U8",
-        "Assigned_time": 24
+        "Assigned_time": 4
     },
     {
         "Subject": "Interakcija covek racunar",
@@ -49,8 +49,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U7",
-        "Assigned_time": 39
+        "Assigned_class": "U4",
+        "Assigned_time": 21
     },
     {
         "Subject": "WEB programiranje",
@@ -62,8 +62,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U8",
-        "Assigned_time": 38
+        "Assigned_class": "U1",
+        "Assigned_time": 28
     },
     {
         "Subject": "WEB programiranje",
@@ -77,8 +77,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
-        "Assigned_time": 36
+        "Assigned_class": "U3",
+        "Assigned_time": 42
     },
     {
         "Subject": "Programski prevodioci",
@@ -92,8 +92,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U3",
-        "Assigned_time": 56
+        "Assigned_class": "U4",
+        "Assigned_time": 16
     },
     {
         "Subject": "Softverske komponente",
@@ -106,7 +106,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U1",
-        "Assigned_time": 18
+        "Assigned_time": 14
     },
     {
         "Subject": "Softverske komponente",
@@ -120,8 +120,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
-        "Assigned_time": 24
+        "Assigned_class": "U3",
+        "Assigned_time": 20
     },
     {
         "Subject": "Masinsko ucenje",
@@ -133,8 +133,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U1",
-        "Assigned_time": 45
+        "Assigned_class": "U8",
+        "Assigned_time": 21
     },
     {
         "Subject": "Genetski algoritmi",
@@ -148,8 +148,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
-        "Assigned_time": 2
+        "Assigned_class": "U5",
+        "Assigned_time": 19
     },
     {
         "Subject": "Programski prevodioci",
@@ -163,7 +163,7 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
+        "Assigned_class": "U7",
         "Assigned_time": 50
     },
     {
@@ -176,8 +176,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U1",
-        "Assigned_time": 0
+        "Assigned_class": "U8",
+        "Assigned_time": 52
     },
     {
         "Subject": "Funkcionalno programiranje",
@@ -191,8 +191,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U3",
-        "Assigned_time": 48
+        "Assigned_class": "U5",
+        "Assigned_time": 4
     },
     {
         "Subject": "Funkcionalno programiranje",
@@ -206,8 +206,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U7",
-        "Assigned_time": 56
+        "Assigned_class": "U5",
+        "Assigned_time": 53
     },
     {
         "Subject": "Interakcija covek racunar",
@@ -222,7 +222,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U5",
-        "Assigned_time": 56
+        "Assigned_time": 17
     },
     {
         "Subject": "Razvoj mobilnih aplikacija",
@@ -235,7 +235,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U1",
-        "Assigned_time": 2
+        "Assigned_time": 30
     },
     {
         "Subject": "Razvoj mobilnih aplikacija",
@@ -249,8 +249,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U7",
-        "Assigned_time": 14
+        "Assigned_class": "U3",
+        "Assigned_time": 44
     },
     {
         "Subject": "Modelovanje i simulacija",
@@ -262,8 +262,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U8",
-        "Assigned_time": 45
+        "Assigned_class": "U1",
+        "Assigned_time": 42
     },
     {
         "Subject": "Programski prevodioci",
@@ -277,8 +277,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U7",
-        "Assigned_time": 48
+        "Assigned_class": "U5",
+        "Assigned_time": 12
     },
     {
         "Subject": "Interakcija covek racunar",
@@ -292,8 +292,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U5",
-        "Assigned_time": 36
+        "Assigned_class": "U4",
+        "Assigned_time": 50
     },
     {
         "Subject": "WEB programiranje",
@@ -308,7 +308,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U4",
-        "Assigned_time": 0
+        "Assigned_time": 52
     },
     {
         "Subject": "Genetski algoritmi",
@@ -322,8 +322,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U5",
-        "Assigned_time": 50
+        "Assigned_class": "U7",
+        "Assigned_time": 28
     },
     {
         "Subject": "Modelovanje i simulacija",
@@ -338,7 +338,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U5",
-        "Assigned_time": 43
+        "Assigned_time": 57
     },
     {
         "Subject": "Bezbednost mreza",
@@ -352,7 +352,7 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
+        "Assigned_class": "U3",
         "Assigned_time": 12
     },
     {
@@ -367,8 +367,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U7",
-        "Assigned_time": 12
+        "Assigned_class": "U4",
+        "Assigned_time": 30
     },
     {
         "Subject": "Kompresija podataka",
@@ -382,8 +382,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U5",
-        "Assigned_time": 0
+        "Assigned_class": "U3",
+        "Assigned_time": 28
     },
     {
         "Subject": "Kompresija podataka",
@@ -397,8 +397,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U3",
-        "Assigned_time": 12
+        "Assigned_class": "U7",
+        "Assigned_time": 42
     },
     {
         "Subject": "Kodovanje i teorija informacija",
@@ -410,8 +410,8 @@
             "U8"
         ],
         "Duration": 3,
-        "Assigned_class": "U1",
-        "Assigned_time": 12
+        "Assigned_class": "U8",
+        "Assigned_time": 42
     },
     {
         "Subject": "Kodovanje i teorija informacija",
@@ -425,7 +425,7 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U5",
+        "Assigned_class": "U4",
         "Assigned_time": 12
     },
     {
@@ -438,8 +438,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U8",
-        "Assigned_time": 10
+        "Assigned_class": "U1",
+        "Assigned_time": 8
     },
     {
         "Subject": "Uvod u robotiku",
@@ -453,8 +453,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U3",
-        "Assigned_time": 6
+        "Assigned_class": "U7",
+        "Assigned_time": 10
     },
     {
         "Subject": "Modelovanje i simulacija",
@@ -468,8 +468,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
-        "Assigned_time": 4
+        "Assigned_class": "U5",
+        "Assigned_time": 6
     },
     {
         "Subject": "Data centar infrastruktura",
@@ -483,8 +483,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
-        "Assigned_time": 38
+        "Assigned_class": "U7",
+        "Assigned_time": 34
     },
     {
         "Subject": "Data centar infrastruktura",
@@ -498,8 +498,8 @@
             "U7"
         ],
         "Duration": 2,
-        "Assigned_class": "U4",
-        "Assigned_time": 57
+        "Assigned_class": "U3",
+        "Assigned_time": 46
     },
     {
         "Subject": "Graficki dizajn 2",
@@ -512,7 +512,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "U8",
-        "Assigned_time": 18
+        "Assigned_time": 30
     },
     {
         "Subject": "Graficki dizajn 2",
@@ -524,7 +524,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "Lecture Thetere",
-        "Assigned_time": 36
+        "Assigned_time": 39
     },
     {
         "Subject": "Muzicka produkcija 3",
@@ -548,7 +548,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "Seminar Hall",
-        "Assigned_time": 25
+        "Assigned_time": 51
     },
     {
         "Subject": "Racunarska animacija",
@@ -561,7 +561,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "U1",
-        "Assigned_time": 30
+        "Assigned_time": 19
     },
     {
         "Subject": "Racunarska animacija",
@@ -573,7 +573,7 @@
             "U8"
         ],
         "Duration": 3,
-        "Assigned_class": "U8",
+        "Assigned_class": "U1",
         "Assigned_time": 48
     },
     {
@@ -586,7 +586,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "Lecture Thetere",
-        "Assigned_time": 0
+        "Assigned_time": 3
     },
     {
         "Subject": "Scenario i knjiga snimanja",
@@ -599,7 +599,7 @@
         ],
         "Duration": 2,
         "Assigned_class": "U1",
-        "Assigned_time": 16
+        "Assigned_time": 44
     },
     {
         "Subject": "Upravljanje i odrzavanje Windows Server okruzenja",
@@ -613,8 +613,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 0
+        "Assigned_class": "U7",
+        "Assigned_time": 18
     },
     {
         "Subject": "Implementiranje Microsoft ISA servera",
@@ -628,8 +628,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U5",
-        "Assigned_time": 45
+        "Assigned_class": "U7",
+        "Assigned_time": 21
     },
     {
         "Subject": "Prakticne tehnike zastite u IP mrezama",
@@ -644,7 +644,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "U4",
-        "Assigned_time": 33
+        "Assigned_time": 0
     },
     {
         "Subject": "Prakticne tehnike zastite u IP mrezama",
@@ -658,8 +658,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 42
+        "Assigned_class": "U7",
+        "Assigned_time": 12
     },
     {
         "Subject": "Istorija racunarstva",
@@ -671,8 +671,8 @@
             "U8"
         ],
         "Duration": 2,
-        "Assigned_class": "U1",
-        "Assigned_time": 8
+        "Assigned_class": "U8",
+        "Assigned_time": 48
     },
     {
         "Subject": "Razvoj infrastrukture i servisa u oblaku",
@@ -686,8 +686,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 18
+        "Assigned_class": "U7",
+        "Assigned_time": 30
     },
     {
         "Subject": "Razvoj infrastrukture i servisa u oblaku",
@@ -701,8 +701,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 39
+        "Assigned_class": "U5",
+        "Assigned_time": 42
     },
     {
         "Subject": "Razvoj web aplikacija i servisa",
@@ -716,8 +716,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U7",
-        "Assigned_time": 36
+        "Assigned_class": "U3",
+        "Assigned_time": 24
     },
     {
         "Subject": "Microsoft tehnologije za pristup podacima",
@@ -731,8 +731,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U5",
-        "Assigned_time": 24
+        "Assigned_class": "U3",
+        "Assigned_time": 36
     },
     {
         "Subject": "Konkurentni i distribuirani sistemi",
@@ -746,8 +746,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U7",
-        "Assigned_time": 21
+        "Assigned_class": "U5",
+        "Assigned_time": 24
     },
     {
         "Subject": "Softversko inzenjerstvo",
@@ -761,7 +761,7 @@
             "U7"
         ],
         "Duration": 4,
-        "Assigned_class": "U7",
+        "Assigned_class": "U5",
         "Assigned_time": 0
     },
     {
@@ -774,8 +774,8 @@
             "U8"
         ],
         "Duration": 4,
-        "Assigned_class": "U8",
-        "Assigned_time": 52
+        "Assigned_class": "U1",
+        "Assigned_time": 0
     },
     {
         "Subject": "Teorija algoritama, automata i jezika",
@@ -788,7 +788,7 @@
         ],
         "Duration": 3,
         "Assigned_class": "U8",
-        "Assigned_time": 0
+        "Assigned_time": 27
     },
     {
         "Subject": "Teorija algoritama, automata i jezika",
@@ -800,8 +800,8 @@
             "U8"
         ],
         "Duration": 3,
-        "Assigned_class": "U8",
-        "Assigned_time": 12
+        "Assigned_class": "U1",
+        "Assigned_time": 36
     },
     {
         "Subject": "Konkurentni i distribuirani sistemi",
@@ -813,8 +813,8 @@
             "U8"
         ],
         "Duration": 3,
-        "Assigned_class": "U1",
-        "Assigned_time": 36
+        "Assigned_class": "U8",
+        "Assigned_time": 12
     },
     {
         "Subject": "Konkurentni i distribuirani sistemi",
@@ -828,8 +828,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 36
+        "Assigned_class": "U4",
+        "Assigned_time": 40
     },
     {
         "Subject": "Softversko inzenjerstvo",
@@ -843,8 +843,8 @@
             "U7"
         ],
         "Duration": 4,
-        "Assigned_class": "U3",
-        "Assigned_time": 30
+        "Assigned_class": "U7",
+        "Assigned_time": 36
     },
     {
         "Subject": "Konkurentni i distribuirani sistemi",
@@ -858,8 +858,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 3
+        "Assigned_class": "U5",
+        "Assigned_time": 48
     },
     {
         "Subject": "Digitalna obrada signala",
@@ -873,8 +873,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U4",
-        "Assigned_time": 6
+        "Assigned_class": "U7",
+        "Assigned_time": 7
     },
     {
         "Subject": "Digitalna obrada signala",
@@ -888,8 +888,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U3",
-        "Assigned_time": 24
+        "Assigned_class": "U5",
+        "Assigned_time": 36
     },
     {
         "Subject": "Namenski racunarski sistemi",
@@ -903,8 +903,8 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U5",
-        "Assigned_time": 15
+        "Assigned_class": "U3",
+        "Assigned_time": 0
     },
     {
         "Subject": "Namenski racunarski sistemi",
@@ -918,7 +918,7 @@
             "U7"
         ],
         "Duration": 3,
-        "Assigned_class": "U7",
+        "Assigned_class": "U4",
         "Assigned_time": 18
     }
 ]
