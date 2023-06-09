@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Homee() {
   let navigate=useNavigate();
+  
   function logout(e){
     e.preventDefault();
     auth.signOut();
@@ -20,9 +21,9 @@ function Homee() {
             <div className='menu-link'>
             <ul>
              <Link className='link' to="/instructors"><li><button>Instructors</button></li></Link> 
-             <Link className='link' to="/rooms"><li><button>Rooms</button></li></Link> 
-             <Link className='link' to="/subjects"><li><button>Subjects</button></li></Link> 
-             <Link className='link' to="/sections"><li><button>Sections</button></li></Link> 
+             <Link className='link' to="/rooms"><li><button>Sections</button></li></Link> 
+             {/* <Link className='link' to="/subjects"><li><button>Subjects</button></li></Link> 
+             <Link className='link' to="/sections"><li><button>Sections</button></li></Link>  */}
              <Link className='link' to="/manager"><li><button>Scenario Manager</button></li></Link> 
             </ul>
             </div>

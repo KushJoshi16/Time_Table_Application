@@ -38,7 +38,7 @@ function Instructor() {
           <button className='insButton' for="file-input">Import From CSV</button>
           <input id="upload" type="file"></input> */}
           <label htmlFor="" className='search' >Search Instructors</label>
-          <input type="text" onChange={search}></input>
+          <input type="text" onChange={search} autoComplete='off'></input>
           </center>
           <div className='instrOp'>
               {/* <label htmlFor="">Available</label>

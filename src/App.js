@@ -7,7 +7,7 @@ import Home from './components/home/Homee';
 import Instructor from './components/instructors/Instructor';
 import Room from './components/rooms/Room';
 import Protected from './components/Protected';
-
+import Manager from './components/manager/Manager';
 
 function App() {
   const [authUser, setAuthUser] = useState(false);
@@ -42,6 +42,11 @@ console.log(authUser)
         <Route path="/rooms" element={
         <Protected authUser={authUser}>
         <Room/>
+        </Protected>}/> 
+
+        <Route path="/manager" element={
+        <Protected authUser={authUser}>
+        <Manager/>
         </Protected>}/> 
 
         </Routes>

@@ -76,17 +76,18 @@ function Room() {
               placeholder="Section"
               id="data"
               onChange={(e) => setInput(e.target.value)}
+              autoComplete="off"
             ></input>
             <input type="submit" className="submitButton" onClick={InputSection} />
           </div>
         </div>
-        <div className="radioButtons">
+        {/* <div className="radioButtons">
           <label htmlFor="">Type:</label>
           <label htmlFor="">Lecture</label>
           <input type="radio" value="" />
           <label htmlFor="">Laboratory</label>
           <input type="radio" value="" />
-        </div>
+        </div> */}
       </div>
       <table id="scheduleTable">
         <thead>
@@ -104,7 +105,7 @@ function Room() {
         </tbody>
       </table>
       <div className="roomButtons">
-        <button className="roomButtons" onClick={()=>navigate("/subjects")}>Finish</button>
+        <button className="roomButtons" onClick={()=>navigate("/manager")}>Finish</button>
         <button className="cancel roomButtons" onClick={()=>navigate("/instructors")}>Cancel</button>
       </div>
     </>
