@@ -1,6 +1,8 @@
 import json
 import random
 
+CLASS_HOURS = 12
+
 def load_data(path):
     with open(path, 'r') as read_file:
         data = json.load(read_file)
@@ -35,11 +37,11 @@ def generate_chromosome(data):
         classroom = random.choice(single_class['Classroom'])
         day = random.randrange(0, 5)
         if day == 4:
-            period = random.randrange(0, 12 - int(single_class['Duration']))
+            period = random.randrange(0, CLASS_HOURS - int(single_class['Duration']))
         else:
-            period = random.randrange(0, 13 - int(single_class['Duration']))
+            period = random.randrange(0, CLASS_HOURS + 1 - int(single_class['Duration']))
         new_single_class['Assigned_class'] = classroom
-        time = 12 * day + period
+        time = CLASS_HOURS * day + period
         new_single_class['Assigned_time'] = time
 
         for i in range(time, time + int(single_class['Duration'])):

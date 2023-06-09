@@ -1,4 +1,5 @@
 import random
+from generator_algo.data import CLASS_HOURS as CLASS_HOURS
 
 def neighbour(chromosome):
     """
@@ -45,7 +46,7 @@ def neighbour(chromosome):
         if classroom not in chromosome[0][i]['Classroom']:
             continue
         for k in range(len(chromosome[2][classroom])):
-            if chromosome[2][classroom][k] == 0 and k % 12 + length <= 12:
+            if chromosome[2][classroom][k] == 0 and k % CLASS_HOURS + length <= CLASS_HOURS:
                 c += 1
                 # If we found x consecutive hours where x is length of our class
                 if c == length:
@@ -63,10 +64,10 @@ def neighbour(chromosome):
         day = random.randrange(0, 5)
         # Friday 8pm is reserved for free hour
         if day == 4:
-            period = random.randrange(0, 12 - int(chromosome[0][i]['Duration']))
+            period = random.randrange(0, CLASS_HOURS - int(chromosome[0][i]['Duration']))
         else:
-            period = random.randrange(0, 13 - int(chromosome[0][i]['Duration']))
-        time = 12 * day + period
+            period = random.randrange(0, CLASS_HOURS + 1 - int(chromosome[0][i]['Duration']))
+        time = CLASS_HOURS * day + period
 
         chromosome[0][i]['Assigned_class'] = classroom
         chromosome[0][i]['Assigned_time'] = time
@@ -108,8 +109,8 @@ def neighbour2(chromosome):
 
         second = chromosome[0][second_index]
         if first['Assigned_class'] in second['Classroom'] and second['Assigned_class'] in first['Classroom']\
-                and first['Assigned_time'] % 12 + int(second['Duration']) <= 12 \
-                and second['Assigned_time'] % 12 + int(first['Duration']) <= 12:
+                and first['Assigned_time'] % CLASS_HOURS + int(second['Duration']) <= CLASS_HOURS \
+                and second['Assigned_time'] % CLASS_HOURS + int(first['Duration']) <= CLASS_HOURS:
             if first['Assigned_time'] + int(second['Duration']) != 60 and second['Assigned_time'] + int(first['Duration']) != 60\
                     and first != second:
                 satisfied = True

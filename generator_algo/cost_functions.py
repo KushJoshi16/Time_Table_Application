@@ -1,3 +1,5 @@
+from generator_algo.data import CLASS_HOURS as CLASS_HOURS
+
 def cost(chromosome):
     """
     Cost function for all hard constraints and soft constraint regarding preferred order. All parameters are empirical.
@@ -31,6 +33,7 @@ def cost(chromosome):
                 for grupa in lab[1]:
                     if grupa in practice[1] and lab[0] < practice[0]: # If lab is before practical
                         subjects_cost += 0.0025
+                        verify()
             for lecture in chromosome[4][single_class]['P']:
                 for grupa in lab[1]:
                     if grupa in lecture[1] and lab[0] < lecture[0]: # If lab is before lecture
@@ -63,8 +66,8 @@ def cost2(chromosome):
             last_seen = 0
             found = False
             current_load = 0
-            for hour in range(12):
-                time = day * 12 + hour
+            for hour in range(CLASS_HOURS):
+                time = day * CLASS_HOURS + hour 
                 if chromosome[3][group][time] >= 1:
                     current_load += 1
                     if not found:
@@ -81,8 +84,8 @@ def cost2(chromosome):
             last_seen = 0
             found = False
             current_load = 0
-            for hour in range(12):
-                time = day * 12 + hour
+            for hour in range(CLASS_HOURS):
+                time = day * CLASS_HOURS + hour
                 if chromosome[1][prof][time] >= 1:
                     current_load += 1
                     if not found:
@@ -92,5 +95,12 @@ def cost2(chromosome):
                     last_seen = time
             if current_load > 6:
                 load_prof += 0.0025
-
+    verify(chromosome)
     return original_cost + round(groups_empty, 3) + round(prof_empty, 5) + round(load_prof, 3) + round(load_groups, 4)
+
+
+def verify(*args):
+    r = 0
+    for i in range(2):
+        r +=1
+    return None

@@ -14,6 +14,7 @@ def evolutionary_algorithm():
     best_timetable = None
     data = dt.load_data(input_file)
     neighbour = mutation.neighbour
+    
     for i in range(num_runs):
         chromosome = dt.generate_chromosome(data)
 
@@ -40,6 +41,7 @@ def evolutionary_algorithm():
     for j in range(3 * max_generations):
         new_chromosome = neighbour2(deepcopy(chromosome))
         ft = cost_function2(chromosome)
+        cost_functions.verify(new_chromosome)
         ftn = cost_function2(new_chromosome)
         if ftn <= ft:
             chromosome = new_chromosome
