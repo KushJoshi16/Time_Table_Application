@@ -7,22 +7,13 @@ data = None
 def timeTableFromOutput():
     with open('classes/output.json') as f:
         data = json.load(f)
-
-    # sectionTimeTableTemplate = {
-    #     "monday":[""]*class_hours,
-    #     "tuesday":[""]*class_hours,
-    #     "wednesday":[""]*class_hours,
-    #     "thursday":[""]*class_hours,
-    #     "friday":[""]*class_hours,
-    #     "saturday":[""]*class_hours
-    # }
     day = [
         "monday",
         "tuesday",
         "wednesday",
         "thursday",
         "friday",
-        "saturday",
+        "saturday"
         ]
     Time_table = {"sections":{}}
     for record in data:
@@ -41,6 +32,8 @@ def timeTableFromOutput():
             sub_day = day[int(record['Assigned_time'])//class_hours]
             lecture =   int(record['Assigned_time'])%class_hours
             section[sub_day][lecture] = record['Subject']
+            for i in range(int(record['Duration'])):
+                section[sub_day][lecture+i] = record['Subject']
             
             Time_table['sections'][group] = section
             
