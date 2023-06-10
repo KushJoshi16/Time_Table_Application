@@ -7,3 +7,7 @@
 - `pip install -r requirements.txt`
 
 - `python app.py`
+
+### Input file format for get_time_table endpoint:
+
+Subject	Type	Professor	Group	Classroom	Duration![image](https://github.com/KushJoshi16/Time_Table_Application/assets/76556985/8b596ca1-08fe-409d-8c13-fa08167a52b6)
