@@ -27,7 +27,7 @@ def Hello_page():
 def set_inputData():
     filepath = None
     if 'file' not in request.files:
-        abort(500)
+        abort(400)
     f = request.files['file']
     basepath = os.path.dirname(__file__)
     filepath = os.path.join(basepath,'uploads',f.filename)
@@ -48,6 +48,7 @@ def set_inputData():
         return jsonify(success=True)
     except Exception as e:
         logger.error(e)
+        return e
         abort(500)
 
  
