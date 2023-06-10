@@ -12,19 +12,8 @@ const SignIn = () => {
     const [signed,setSigned]=useState(false);
     const [fileinput,setFileInput]=useState("");
     const [posts, setPosts] = useState([]);
-
-    // useEffect(() => {
-    //    fetch('https://timetablegenerator.azurewebsites.net/get_time_table')
-    //       .then((res) => res.json())
-    //       .then((data) => {
-    //          console.log(data);
-    //          setPosts(data);
-    //       })
-    //       .catch((err) => {
-    //          console.log(err.message);
-    //       });
-    // }, []);
-
+    const [file, setFile] = useState(null);
+    
     const signIn = (e) => {
       e.preventDefault();
       signInWithEmailAndPassword(auth, email, password)
@@ -56,23 +45,34 @@ function logout(e){
         console.log("user is logged out");
         navigate('/rooms');
       }
-console.log(setSigned)
-
-
-  axios.get('https://timetablegenerator.azurewebsites.net/get_time_table')
-  .then(resp => resp.json()) 
-  .then( (response) => {
-    console.log(response);
-    this.setState({
-      fetchUser: response.data
-    });
-  })
-  .catch( (error) => {
-    console.log(error);
-  });  
+console.log(setSigned) 
 
 console.log(fileinput);
 
+const handleFileChange = (e) => {
+  setFile(e.target.files[0]);
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (file) {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+      const response = await fetch('https://timetablegenerator.azurewebsites.net/set_inputData', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      });
+      console.log(response);
+      console.log('File uploaded successfully');
+    } catch (error) {
+      console.error('Error uploading file:', error);
+    }
+  }
+};
 
 
 return (
@@ -104,8 +104,8 @@ return (
                 <p>Don't have an admin account?</p>
                 <input class="loginButton" type="submit" id='SignUp' name="SignUp" value="SignUp" onClick={signUp}/>
             </div>
-            {!signed && <button className="adminButton" onClick={()=>navigate("/rooms")}>Finish</button>}
-            {signed &&
+           {!signed && <button className="adminButton" onClick={()=>navigate("/rooms")}>Finish</button>}
+            {/* {signed &&
             <div className="admin">
             <label className="csvLabel"for="file-input">Import From CSV</label>
              <input type="file" id="input" onChange={
@@ -117,7 +117,14 @@ return (
 
               </input>
             </div>
-            } 
+            }  */}
+            {
+            signed && <div>
+            <form onSubmit={handleSubmit}>
+              <input type="file" onChange={handleFileChange} />
+              <button type="submit">Upload</button>
+            </form>
+            </div>}
             {signed && <button className='logout1Button' onClick={logout}>Logout</button> }           
     </div>
 </div>

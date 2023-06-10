@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import Home from "../home/Homee";
 import "./rooms.css";
 import sections from "../data.json";
@@ -62,6 +62,24 @@ function Room() {
    }
 
   console.log(input);
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://timetablegenerator.azurewebsites.net/generate_time_table');
+        const jsonData = await response.json();
+        setData(jsonData);
+        console.log(response)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(data);
   return (
     <>
       <Home />
