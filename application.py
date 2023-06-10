@@ -21,11 +21,11 @@ app = application
 
 @app.route('/')
 def Hello_page():
-    app.logger.debug('This is a debug log message')
-    app.logger.info('This is an information log message')
-    app.logger.warn('This is a warning log message')
-    app.logger.error('This is an error message')
-    app.logger.critical('This is a critical message')
+#     app.logger.debug('This is a debug log message')
+#     app.logger.info('This is an information log message')
+#     app.logger.warn('This is a warning log message')
+#     app.logger.error('This is an error message')
+#     app.logger.critical('This is a critical message')
   return 'Hello, The Website is fine!!'
 
 @app.route('/set_inputData',methods=['POST'])
