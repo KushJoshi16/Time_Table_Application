@@ -5,17 +5,13 @@ import generator_algo.output_format as outFmat
 import json
 import logging
 import os
+from flask_cors import CORS
 
-# UPLOAD_FOLDER = os.path.join('staticFiles', 'uploads')
 
-# logging.basicConfig(filename="logs/app_logs.log",
-#                     format='%(asctime)s %(message)s',
-#                     filemode='w')
- 
 logger = logging.getLogger('azure.mgmt.resource')
  
 application = Flask(__name__)
-
+CORS(application)
 app = application
 
 
