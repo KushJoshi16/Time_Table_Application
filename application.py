@@ -8,11 +8,11 @@ import os
 
 # UPLOAD_FOLDER = os.path.join('staticFiles', 'uploads')
 
-logging.basicConfig(filename="logs/app_logs.log",
-                    format='%(asctime)s %(message)s',
-                    filemode='w')
+# logging.basicConfig(filename="logs/app_logs.log",
+#                     format='%(asctime)s %(message)s',
+#                     filemode='w')
  
-logger = logging.getLogger()
+logger = logging.getLogger('azure.mgmt.resource')
  
 application = Flask(__name__)
 
@@ -21,6 +21,11 @@ app = application
 
 @app.route('/')
 def Hello_page():
+    app.logger.debug('This is a debug log message')
+    app.logger.info('This is an information log message')
+    app.logger.warn('This is a warning log message')
+    app.logger.error('This is an error message')
+    app.logger.critical('This is a critical message')
   return 'Hello, The Website is fine!!'
 
 @app.route('/set_inputData',methods=['POST'])
@@ -82,4 +87,4 @@ def get_time_table():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
