@@ -22,8 +22,6 @@ function Homee() {
             <ul>
              <Link className='link' to="/instructors"><li><button>Instructors</button></li></Link> 
              <Link className='link' to="/rooms"><li><button>Sections</button></li></Link> 
-             {/* <Link className='link' to="/subjects"><li><button>Subjects</button></li></Link> 
-             <Link className='link' to="/sections"><li><button>Sections</button></li></Link>  */}
              <Link className='link' to="/manager"><li><button>Scenario Manager</button></li></Link> 
             </ul>
             </div>

@@ -67,7 +67,7 @@ const handleSubmit = async (e) => {
         mode: 'no-cors'
       });
       console.log(response);
-      console.log('File uploaded successfully');
+      alert('File uploaded successfully');
     } catch (error) {
       console.error('Error uploading file:', error);
     }

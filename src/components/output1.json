@@ -50,9 +50,9 @@
         "Assigned_time": 16
     },
     {
-        "Subject": "Masinsko ucenje",
+        "Subject": "Web Development",
         "Type": "P",
-        "Professor": "Ilic Nemanja",
+        "Professor": "Manish Sharma",
         "Groups": [
             "301",
             "302",
@@ -68,9 +68,9 @@
         "Assigned_time": 4
     },
     {
-        "Subject": "Interakcija covek racunar",
+        "Subject": "Software Engineering",
         "Type": "V",
-        "Professor": "Radosavljevic Nemanja",
+        "Professor": "Neha Tripathi",
         "Groups": [
             "301",
             "303",

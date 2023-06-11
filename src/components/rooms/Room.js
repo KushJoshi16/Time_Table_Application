@@ -141,8 +141,8 @@ function Room() {
         </tbody>
       </table>
       <div className="roomButtons">
-        <button className="roomButtons" onClick={()=>navigate("/manager")}>Finish</button>
-        <button className="cancel roomButtons" onClick={()=>navigate("/instructors")}>Cancel</button>
+        {/* <button className="roomButtons" onClick={()=>navigate("/manager")}>Finish</button> */}
+        <button className="roomButtons" onClick={()=>navigate("/instructors")}>Cancel</button>
       </div>
     </>
   );
