@@ -123,7 +123,7 @@ function Room() {
             <input type="submit" className="submitButton" onClick={InputSection} />
           </div>
         </div>
-        <div className="GenerateButton"><button onClick={generateData}>Generate Time Table</button></div>
+        {/* <div className="GenerateButton"><button onClick={generateData}>Generate Time Table</button></div> */}
       </div>
       <table id="scheduleTable">
         <thead>
