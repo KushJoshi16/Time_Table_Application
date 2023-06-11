@@ -45,7 +45,7 @@ function logout(e){
         console.log("user is logged out");
         navigate('/rooms');
       }
-console.log(setSigned) 
+//console.log(setSigned) 
 
 console.log(fileinput);
 

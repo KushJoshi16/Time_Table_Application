@@ -3,19 +3,23 @@ import Home from "../home/Homee";
 import "./rooms.css";
 import sections from "../data.json";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 function Room() {
   const [input, setInput] = useState();
+  const [data, setData] = useState(null);
   const navigate=useNavigate();
 
   function InputSection() {
     let filtered;
     if(input)
     {
-        filtered = sections.sections?.filter(
-            (section) => section?.sec === input 
-          );
+        // filtered = sections.sections?.filter(
+        //     (section) => section?.sec === input 
+        //   );
+         filtered = data.sections[input]
 
+         console.log(filtered)
           if(filtered)
           {
             const table = document.getElementById("scheduleTable");
@@ -40,7 +44,7 @@ function Room() {
                 "saturday",
               ]) {
                 const cell = document.createElement("td");
-                cell.textContent = filtered ? filtered[0][day][i - 8] : "";
+                cell.textContent = filtered ? filtered[day][i - 8] : "";
                 row.appendChild(cell);
               }
               table.appendChild(row);
@@ -62,12 +66,32 @@ function Room() {
    }
 
   console.log(input);
-  const [data, setData] = useState(null);
+
+  const generateData = async() => {
+    try {
+      const response = await fetch('https://timetablegenerator.azurewebsites.net/generate_time_table', {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+        },
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+  
+      const result = await response.json();
+      return result;
+    } catch (err) {
+      console.log(err);
+    }
+  
+  };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://timetablegenerator.azurewebsites.net/generate_time_table');
+        const response = await fetch('https://timetablegenerator.azurewebsites.net/get_time_table');
         const jsonData = await response.json();
         setData(jsonData);
         console.log(response)
@@ -99,13 +123,7 @@ function Room() {
             <input type="submit" className="submitButton" onClick={InputSection} />
           </div>
         </div>
-        {/* <div className="radioButtons">
-          <label htmlFor="">Type:</label>
-          <label htmlFor="">Lecture</label>
-          <input type="radio" value="" />
-          <label htmlFor="">Laboratory</label>
-          <input type="radio" value="" />
-        </div> */}
+        <div className="GenerateButton"><button onClick={generateData}>Generate Time Table</button></div>
       </div>
       <table id="scheduleTable">
         <thead>
